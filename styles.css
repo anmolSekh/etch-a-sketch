@@ -1,9 +1,15 @@
-.flex {
+body {
     display: flex;
 }
 
+.flex {
+    flex: 1;
+    display: flex;
+}
+/* need grid to scale/shrink to page size */
 .box {
     flex: 1;
+    min-height: 0;
     height: 50px;
     width: 50px;
     border: 1px solid black;
