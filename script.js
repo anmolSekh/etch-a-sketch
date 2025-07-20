@@ -13,6 +13,9 @@ for(i = 0; i < n; i++) {
         let div2 = document.createElement("div");
         div2.classList.add("box");
         div2.addEventListener("mouseover", function(e) {
+            e.target.style.background = "gray";
+        })
+        div2.addEventListener("mouseout", function(e) {
             e.target.style.background = "black";
         })
         div.appendChild(div2);
