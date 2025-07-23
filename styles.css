@@ -1,12 +1,22 @@
 body {
-
+    /* display: flex; */
+    /* flex-direction: column; */
 }
-.flex {
-
+.flex { /* this one should fit content vertically maybe*/
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-direction: column; /* this keeps the grid fitted horizontally */
+    /* align-self: center; */
 }
-.row {
-
+.row { /* this one fits content horizontally */ 
+    /* flex: 0 1 50%; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row; /* this keeps the grid fitted horizontally */
 }
-.box {
+.box { /* make sure the squares remain square */
     border: 1px solid black;
+    /* height: 100px; */
+    /* width: 100px; */
+    aspect-ratio: 1/1;
 }
