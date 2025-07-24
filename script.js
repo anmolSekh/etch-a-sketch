@@ -31,8 +31,25 @@ set.addEventListener("click", ()=> {
         content.appendChild(div);
     }
 })
-// console.log(n);
 
+for(i = 0; i < n; i++) {
+    let div = document.createElement("div");
+    div.classList.add("row");
+    // div.classList.add("flex");
+    for(j = 0; j < n; j++) {
+        let div2 = document.createElement("div");
+        div2.classList.add("box");
+        div2.addEventListener("mouseover", function(e) {
+            e.target.style.background = "gray";
+        })
+        div2.addEventListener("mouseout", function(e) {
+            e.target.style.background = "black";
+        })
+        div.appendChild(div2);
+    }
+    
+    content.appendChild(div);
+}
 
 const reset = document.querySelector("#reset");
 reset.id = "reset";
