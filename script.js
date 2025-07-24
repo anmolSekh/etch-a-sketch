@@ -4,7 +4,7 @@
 
 //get it to work on 2x2 then scale to 16x16
 const content = document.querySelector("#content");
-let n = 16;
+let n = 100;
 for(i = 0; i < n; i++) {
     let div = document.createElement("div");
     div.classList.add("row");

@@ -1,36 +1,18 @@
 body {
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 .flex { /* this one should fit content vertically maybe*/ /* y-axis */
-    /* position: fixed; */
-    
+
     height: 50%;
-    width: 50%;
+    width: 50%; /* give the grid a size to remain relative to the users window */
     margin: 0 auto;
-    /* height: 100vh; */
-    /* width: 100vw; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-direction: column; /* this keeps the grid fitted horizontally */
-    /* align-self: center; */
 }
 .row { /* this one fits content horizontally */ /* x axis */
-    /* flex: 1; */
-    display: flex;
+    display: flex; /* allows grid to resize */
     
-    /* flex-direction: column; */
-    /* flex-direction: row;  */
 }
 .box { /* make sure the squares remain square */
-    /* inline block? */
-    /* display: inline-block; */
-    flex: 1;
+
+    flex: 1; /* allows grid to resize */
     border: 1px solid black;
-    /* height: 100px; */
-    /* width: 100px; */
-    aspect-ratio: 1/1;
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 1/1; /* makes a square */
 }
