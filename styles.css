@@ -1,5 +1,8 @@
 body {
 }
+#reset {
+    margin: 10px;
+}
 .flex { /* this one should fit content vertically maybe*/ /* y-axis */
 
     height: 50%;
