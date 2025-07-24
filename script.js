@@ -23,3 +23,13 @@ for(i = 0; i < n; i++) {
     
     content.appendChild(div);
 }
+
+const reset = document.createElement("button");
+reset.addEventListener("click", ()=> {
+    const box = document.querySelectorAll('.box');
+    box.forEach(item => item.style.background = "white");
+})
+
+reset.textContent= "Reset";
+
+content.appendChild(reset)
