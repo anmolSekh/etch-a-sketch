@@ -1,5 +1,8 @@
 body {
 }
+#settings {
+    text-align: center;
+}
 #reset {
     margin: 10px;
 }

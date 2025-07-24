@@ -1,16 +1,30 @@
 //Use script to add 16 square divs
 //onmouseover, highlight
 //
+function randomRGB() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
 
+    return `rgb(${r},${g},${b})`
+}
 //get it to work on 2x2 then scale to 16x16
 const content = document.querySelector("#content");
-const input = document.querySelector("#size");
+// const input = document.querySelector("#size");
 const set = document.querySelector("#set");
 let n = 16;
 set.addEventListener("click", ()=> {
     content.innerHTML="";
-    n = input.value;
-    input.value="";
+    let newn = prompt("Enter size for grid");
+    if(newn > 100) {
+        n = n;
+        alert("Maximum size: 100");
+    } else {
+        n = newn;
+    }
+    
+    // n = newn;
+    // input.value="";
     console.log(n);
     for(i = 0; i < n; i++) {
         let div = document.createElement("div");
@@ -23,7 +37,7 @@ set.addEventListener("click", ()=> {
                 e.target.style.background = "gray";
             })
             div2.addEventListener("mouseout", function(e) {
-                e.target.style.background = "black";
+                e.target.style.background = randomRGB();
             })
             div.appendChild(div2);
         }
@@ -43,7 +57,7 @@ for(i = 0; i < n; i++) {
             e.target.style.background = "gray";
         })
         div2.addEventListener("mouseout", function(e) {
-            e.target.style.background = "black";
+            e.target.style.background = randomRGB();
         })
         div.appendChild(div2);
     }
